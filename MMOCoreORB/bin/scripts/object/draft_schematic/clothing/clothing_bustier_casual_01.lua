@@ -64,9 +64,9 @@ object_draft_schematic_clothing_clothing_bustier_casual_01 = object_draft_schema
 
    ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
    ingredientTitleNames = {"bodice", "binding_and_reinforcement", "trim"},
-   ingredientSlotType = {1, 0, 0},
-   resourceTypes = {"object/tangible/component/clothing/shared_synthetic_cloth.iff", "fiberplast", "hide"},
-   resourceQuantities = {2, 20, 30},
+   ingredientSlotType = {1, 0, 1},
+   resourceTypes = {"object/tangible/component/clothing/shared_synthetic_cloth.iff", "fiberplast", "object/tangible/component/clothing/shared_synthetic_cloth.iff"},
+   resourceQuantities = {1, 50, 1},
    contribution = {100, 100, 100},
 
 
