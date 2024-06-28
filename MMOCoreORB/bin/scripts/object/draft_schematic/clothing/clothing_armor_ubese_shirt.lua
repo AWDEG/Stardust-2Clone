@@ -64,9 +64,9 @@ object_draft_schematic_clothing_clothing_armor_ubese_shirt = object_draft_schema
 
    ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
    ingredientTitleNames = {"auxilary_coverage", "body", "liner"},
-   ingredientSlotType = {0, 0, 0},
-   resourceTypes = {"iron", "steel", "fiberplast"},
-   resourceQuantities = {20, 30, 10},
+   ingredientSlotType = {1, 0, 1},
+   resourceTypes = {"object/tangible/component/clothing/shared_synthetic_cloth.iff", "steel", "object/tangible/component/clothing/shared_synthetic_cloth.iff"},
+   resourceQuantities = {1, 50, 1},
    contribution = {100, 100, 100},
 
 
