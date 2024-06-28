@@ -62,7 +62,7 @@ object_draft_schematic_clothing_clothing_ith_shirt_casual_03 = object_draft_sche
    customizationStringNames = {},
    customizationDefaults = {},
 
-   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
+   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
    ingredientTitleNames = {"body", "binding_and_hardware", "stitching"},
    ingredientSlotType = {1, 0, 1},
    resourceTypes = {"object/tangible/component/clothing/shared_synthetic_cloth.iff", "fiberplast", "object/tangible/component/clothing/shared_synthetic_cloth.iff"},
