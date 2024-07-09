@@ -64,9 +64,9 @@ object_draft_schematic_clothing_clothing_hat_casual_14 = object_draft_schematic_
 
    ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
    ingredientTitleNames = {"shell", "binding_and_weatherproofing", "liner"},
-   ingredientSlotType = {0, 0, 0},
-   resourceTypes = {"fiberplast", "petrochem_inert", "fiberplast"},
-   resourceQuantities = {10, 6, 6},
+   ingredientSlotType = {1, 0, 1},
+   resourceTypes = {"object/tangible/component/clothing/shared_synthetic_cloth.iff", "petrochem_inert", "object/tangible/component/clothing/shared_synthetic_cloth.iff"},
+   resourceQuantities = {1, 25, 1},
    contribution = {100, 100, 100},
 
 
