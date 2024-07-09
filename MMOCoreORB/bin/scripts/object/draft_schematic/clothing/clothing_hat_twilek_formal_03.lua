@@ -62,12 +62,12 @@ object_draft_schematic_clothing_clothing_hat_twilek_formal_03 = object_draft_sch
    customizationStringNames = {"/private/index_color_1", "/private/index_color_2"},
    customizationDefaults = {32, 63},
 
-   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
-   ingredientTitleNames = {"shell", "binding_and_weatherproofing", "liner", "green_diamond_crusting", "green_diamond_support"},
+   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
+   ingredientTitleNames = {"shell", "binding_and_weatherproofing", "liner"},
    ingredientSlotType = {1, 0, 1, 0, 0},
-   resourceTypes = {"object/tangible/component/clothing/shared_synthetic_cloth.iff", "petrochem_inert", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "crystalline_green_diamond", "armophous_plexite"},
-   resourceQuantities = {3, 20, 3, 10, 10},
-   contribution = {100, 100, 100, 100, 100},
+   resourceTypes = {"object/tangible/component/clothing/shared_synthetic_cloth.iff", "petrochem_inert", "object/tangible/component/clothing/shared_synthetic_cloth.iff"},
+   resourceQuantities = {1, 25, 1},
+   contribution = {100, 100, 100},
 
 
    targetTemplate = "object/tangible/wearables/hat/hat_twilek_s03.iff",
