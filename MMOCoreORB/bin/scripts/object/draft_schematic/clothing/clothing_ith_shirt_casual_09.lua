@@ -66,7 +66,7 @@ object_draft_schematic_clothing_clothing_ith_shirt_casual_09 = object_draft_sche
    ingredientTitleNames = {"body", "trim", "binding_and_hardware"},
    ingredientSlotType = {1, 1, 0},
    resourceTypes = {"object/tangible/component/clothing/shared_synthetic_cloth.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "fiberplast"},
-   resourceQuantities = {3, 3, 20},
+   resourceQuantities = {1, 1, 50},
    contribution = {100, 100, 100},
 
 
