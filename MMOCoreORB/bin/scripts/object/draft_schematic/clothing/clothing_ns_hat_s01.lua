@@ -62,12 +62,12 @@ object_draft_schematic_clothing_clothing_ns_hat_s01 = object_draft_schematic_clo
    customizationStringNames = {"/private/index_color_1", "/private/index_color_2"},
    customizationDefaults = {55, 41},
 
-   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
-   ingredientTitleNames = {"trim_and_binding", "trim", "rancor_hide", "hardware", "skirt", "bodice"},
-   ingredientSlotType = {0, 1, 1, 0, 1, 1},
-   resourceTypes = {"bone", "object/tangible/component/clothing/shared_trim.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "metal", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff"},
-   resourceQuantities = {14, 2, 3, 8, 3, 1},
-   contribution = {100, 100, 100, 100, 100, 100},
+   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
+   ingredientTitleNames = {"trim_and_binding", "trim", "rancor_hide", "hardware", "skirt"},
+   ingredientSlotType = {0, 1, 1, 0, 1},
+   resourceTypes = {"bone", "object/tangible/component/clothing/shared_trim.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "metal", "object/tangible/component/clothing/shared_synthetic_cloth.iff"},
+   resourceQuantities = {10, 1, 1, 10, 1},
+   contribution = {100, 100, 100, 100, 100},
 
 
    targetTemplate = "object/tangible/wearables/hat/nightsister_hat_s01.iff",
