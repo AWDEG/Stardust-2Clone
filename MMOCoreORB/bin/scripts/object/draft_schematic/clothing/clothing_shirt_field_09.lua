@@ -62,12 +62,12 @@ object_draft_schematic_clothing_clothing_shirt_field_09 = object_draft_schematic
    customizationStringNames = {"/private/index_color_1", "/private/index_color_2"},
    customizationDefaults = {158, 255},
 
-   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
-   ingredientTitleNames = {"body", "binding_and_hardware"},
-   ingredientSlotType = {0, 0},
-   resourceTypes = {"fiberplast", "metal"},
-   resourceQuantities = {30, 30},
-   contribution = {100, 100},
+   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
+   ingredientTitleNames = {"body", "binding_and_hardware", "shell", "stitching"},
+   ingredientSlotType = {0, 0, 1, 1},
+   resourceTypes = {"fiberplast", "metal", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff"},
+   resourceQuantities = {25, 25, 1, 1},
+   contribution = {100, 100, 100, 100},
 
 
    targetTemplate = "object/tangible/wearables/shirt/shirt_s09.iff",
