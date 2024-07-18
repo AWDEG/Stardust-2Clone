@@ -62,12 +62,12 @@ object_draft_schematic_clothing_clothing_shirt_casual_27 = object_draft_schemati
    customizationStringNames = {"/private/index_color_1"},
    customizationDefaults = {124},
 
-   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
-   ingredientTitleNames = {"body", "binding_and_hardware"},
-   ingredientSlotType = {0, 0},
-   resourceTypes = {"fiberplast", "petrochem_inert_polymer"},
-   resourceQuantities = {25, 5},
-   contribution = {100, 100},
+   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
+   ingredientTitleNames = {"body", "binding_and_hardware", "shell", "stitching"},
+   ingredientSlotType = {0, 0, 1, 1},
+   resourceTypes = {"fiberplast", "petrochem_inert_polymer", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff"},
+   resourceQuantities = {40, 10, 1, 1},
+   contribution = {100, 100, 100, 100},
 
 
    targetTemplate = "object/tangible/wearables/shirt/shirt_s27.iff",
