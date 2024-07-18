@@ -66,7 +66,7 @@ object_draft_schematic_clothing_clothing_wke_hat_s01 = object_draft_schematic_cl
    ingredientTitleNames = {"shell_half", "shell_half2", "binding_and_weatherproofing"},
    ingredientSlotType = {1, 1, 0},
    resourceTypes = {"object/tangible/component/clothing/shared_synthetic_cloth.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "petrochem_inert"},
-   resourceQuantities = {1, 1, 35},
+   resourceQuantities = {1, 1, 25},
    contribution = {100, 100, 100},
 
 
