@@ -62,12 +62,12 @@ object_draft_schematic_clothing_clothing_wke_hood_s01 = object_draft_schematic_c
    customizationStringNames = {"/private/index_color_1", "/private/index_color_2"},
    customizationDefaults = {11, 20},
 
-   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
-   ingredientTitleNames = {"body", "binding_and_hardware"},
-   ingredientSlotType = {0, 0},
-   resourceTypes = {"hide", "petrochem_inert_polymer"},
-   resourceQuantities = {12, 6},
-   contribution = {100, 100},
+   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
+   ingredientTitleNames = {"shell_half", "shell_half2", "binding_and_weatherproofing"},
+   ingredientSlotType = {1, 1, 0},
+   resourceTypes = {"object/tangible/component/clothing/shared_synthetic_cloth.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "petrochem_inert"},
+   resourceQuantities = {1, 1, 25},
+   contribution = {100, 100, 100},
 
 
    targetTemplate = "object/tangible/wearables/wookiee/wke_hood_s01.iff",
