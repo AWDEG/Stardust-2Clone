@@ -91,7 +91,7 @@ bool CombatManager::startCombat(CreatureObject* attacker, TangibleObject* defend
 	if (attacker->isPlayerCreature() && !attacker->hasDefender(defender)) {
 		ManagedReference<WeaponObject*> weapon = attacker->getWeapon();
 
-		if (weapon != nullptr && weapon->isJediWeapon()) {
+		if (weapon != nullptr && weapon->isJediWeapon() && attacker->hasSkill("force_title_jedi_rank_03")) {
 			VisibilityManager::instance()->increaseVisibility(attacker, 25);
 		}
 	}
@@ -101,7 +101,7 @@ bool CombatManager::startCombat(CreatureObject* attacker, TangibleObject* defend
 	if (creo != nullptr && creo->isPlayerCreature() && !creo->hasDefender(attacker)) {
 		ManagedReference<WeaponObject*> weapon = creo->getWeapon();
 
-		if (weapon != nullptr && weapon->isJediWeapon()) {
+		if (weapon != nullptr && weapon->isJediWeapon() && creo->hasSkill("force_title_jedi_rank_03")) {
 			VisibilityManager::instance()->increaseVisibility(creo, 25);
 		}
 	}
@@ -2113,33 +2113,33 @@ float CombatManager::getDefenderToughnessModifier(CreatureObject* defender, int 
 		}
 	}
 		
-	if (attackType == weapon->getAttackType() && damType != SharedWeaponObjectTemplate::LIGHTSABER && jediToughness > 0 && forceArmor <= 0 && isWearingArmor(defender)){
-		damage *= 1.f - (jediToughness / 500.f);
-		//defender->sendSystemMessage("You have armor on, your Jedi Toughness has been disabled for this attack!!");
+	if (damType != SharedWeaponObjectTemplate::LIGHTSABER && jediToughness > 0 && forceArmor <= 0 && isWearingArmor(defender)){
+        damage *= 1.f - (jediToughness / 500.f);
+        //Damage is not LS, but player is wearing armour, full damage.
 
-	}else if (attackType == weapon->getAttackType() && damType != SharedWeaponObjectTemplate::LIGHTSABER && jediToughness > 0 && forceArmor <= 0){
-		int maxReduction = 81;
-    	int curvePlacement = 2.5;
-    	float growthRate = -0.085;
-   		float growthCurve = 2.5;
-		damage *= 1 - (.01f * (maxReduction / (pow(1 + curvePlacement * exp(growthRate * jediToughness), growthCurve))));
-		
-	}
+    } else if (damType != SharedWeaponObjectTemplate::LIGHTSABER && jediToughness > 0 && forceArmor <= 0){
+        int maxReduction = 81;
+        int curvePlacement = 2.5;
+        float growthRate = -0.085;
+           float growthCurve = 2.5;
+        damage *= 1 - (.01f * (maxReduction / (pow(1 + curvePlacement * exp(growthRate * jediToughness), growthCurve))));
+        
+    }    //Damage type is not LS, JT is greater than 0 and FA is off, use mitigating code.
+    
+    if (attackType != SharedWeaponObjectTemplate::FORCEATTACK && damType == SharedWeaponObjectTemplate::LIGHTSABER && saberToughness > 0 && forceArmor <= 0 && isWearingArmor(defender)){
+        damage *= 1.f - (saberToughness / 500.f);
+        //defender->sendSystemMessage("You have armor on, your Lightsaber Toughness has been disabled for this attack!!");
 
-	if (attackType == weapon->getAttackType() && damType == SharedWeaponObjectTemplate::LIGHTSABER && saberToughness > 0 && forceArmor <= 0 && isWearingArmor(defender)){
-		damage *= 1.f - (saberToughness / 500.f);
-		//defender->sendSystemMessage("You have armor on, your Lightsaber Toughness has been disabled for this attack!!");
-
-	}else if (attackType == weapon->getAttackType() && damType == SharedWeaponObjectTemplate::LIGHTSABER && saberToughness > 0 && forceArmor <= 0){
-		int maxReduction = 80;
-    	int curvePlacement = 5;
-    	float growthRate = -0.085;
-   		float growthCurve = 1;
-		damage *= 1 - (.01f * (maxReduction / (pow(1 + curvePlacement * exp(growthRate * saberToughness), growthCurve))));
-	}
+    } else if (attackType != SharedWeaponObjectTemplate::FORCEATTACK && damType == SharedWeaponObjectTemplate::LIGHTSABER && saberToughness > 0 && forceArmor <= 0){
+        int maxReduction = 80;
+        int curvePlacement = 5;
+        float growthRate = -0.085;
+           float growthCurve = 1;
+        damage *= 1 - (.01f * (maxReduction / (pow(1 + curvePlacement * exp(growthRate * saberToughness), growthCurve))));
+    }
 
 
-	return damage < 0 ? 0 : damage;
+    return damage < 0 ? 0 : damage;
 }
 
 bool CombatManager::isWearingArmor(CreatureObject* creo) const {
@@ -2723,6 +2723,7 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 				return false;
 			} else {
 				playerObject->setForcePower(playerObject->getForcePower() - force);
+				if (attacker->hasSkill("force_title_jedi_rank_03"))
 				VisibilityManager::instance()->increaseVisibility(attacker, data.getCommand()->getVisMod()); // Give visibility
 			}
 		}

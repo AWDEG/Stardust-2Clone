@@ -218,6 +218,7 @@ includeFile("items/creature/krayt_dragon_scales.lua")
 includeFile("items/creature/krayt_dragon_tissue_common.lua")
 includeFile("items/creature/krayt_dragon_tissue_rare.lua")
 includeFile("items/creature/krayt_dragon_tissue_uncommon.lua")
+includeFile("items/creature/krayt_dragon_tissue_enhanced.lua")
 includeFile("items/creature/peko_albatross_feather.lua")
 includeFile("items/creature/rancor_bile.lua")
 includeFile("items/creature/rancor_hides.lua")
@@ -484,6 +485,9 @@ includeFile("items/npc/mokk_blood.lua")
 includeFile("items/npc/kunga_blood.lua")
 includeFile("items/npc/dantari_blood.lua")
 includeFile("items/npc/janta_hides.lua")
+includeFile("items/npc/mokk_hides.lua")
+includeFile("items/npc/kunga_hides.lua")
+includeFile("items/npc/dantari_hides.lua")
 includeFile("items/npc/jawa_beads.lua")
 includeFile("items/npc/nightsister_lance_schematic.lua")
 includeFile("items/npc/nightsister_layer.lua")
@@ -1445,6 +1449,30 @@ includeFile("items/loot_schematic/rebel_house_loot_schematic.lua")
 includeFile("items/loot_schematic/relaxation_house_loot_schematic.lua")
 includeFile("items/loot_schematic/sith_house_loot_schematic.lua")
 
+--Tusken Clothing Schematics
+includeFile("items/loot_schematic/tusken_clothing/bandolier_tusken_raider_s01.lua")
+includeFile("items/loot_schematic/tusken_clothing/bandolier_tusken_raider_s02.lua")
+includeFile("items/loot_schematic/tusken_clothing/bandolier_tusken_raider_s03.lua")
+
+includeFile("items/loot_schematic/tusken_clothing/robe_tusken_raider_s01_crafted.lua")
+includeFile("items/loot_schematic/tusken_clothing/robe_tusken_raider_s01_armored.lua")
+includeFile("items/loot_schematic/tusken_clothing/robe_tusken_raider_s02_crafted.lua")
+includeFile("items/loot_schematic/tusken_clothing/robe_tusken_raider_s02_armored.lua")
+
+includeFile("items/loot_schematic/tusken_clothing/bracer_l_tusken_raider_crafted.lua")
+includeFile("items/loot_schematic/tusken_clothing/bracer_l_tusken_raider_armored.lua")
+includeFile("items/loot_schematic/tusken_clothing/bracer_r_tusken_raider_crafted.lua")
+includeFile("items/loot_schematic/tusken_clothing/bracer_r_tusken_raider_armored.lua")
+
+includeFile("items/loot_schematic/tusken_clothing/hat_tusken_raider_crafted.lua")
+includeFile("items/loot_schematic/tusken_clothing/hat_tusken_raider_armored.lua")
+
+includeFile("items/loot_schematic/tusken_clothing/boots_tusken_raider_crafted.lua")
+includeFile("items/loot_schematic/tusken_clothing/boots_tusken_raider_armored.lua")
+
+includeFile("items/loot_schematic/tusken_clothing/gloves_tusken_raider_crafted.lua")
+includeFile("items/loot_schematic/tusken_clothing/belt_tusken_raider_crafted.lua")
+
 -- Clone Armor 
 includeFile("items/armor/armor_clone_trooper_imperial_s01_gloves.lua")
 includeFile("items/armor/armor_clone_trooper_imperial_s01_bicep_l.lua")
@@ -1721,3 +1749,13 @@ includeFile("items/creature/ewok_tooth.lua")
 
 includeFile("items/furniture/xeno_desk.lua") 
 
+--Proff Rings
+includeFile("items/wearables/ring/ring_architecht.lua")
+includeFile("items/wearables/ring/ring_armor.lua")
+includeFile("items/wearables/ring/ring_carbine.lua")
+includeFile("items/wearables/ring/ring_chef.lua")
+includeFile("items/wearables/ring/ring_commando.lua")
+includeFile("items/wearables/ring/ring_defense.lua")
+includeFile("items/wearables/ring/ring_jedi_regen.lua")
+includeFile("items/wearables/ring/ring_medic_craft.lua")
+includeFile("items/wearables/ring/ring_medic_use.lua")

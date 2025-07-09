@@ -71,6 +71,7 @@ includeFile("groups/creature/krayt_dragon_common.lua")
 includeFile("groups/creature/krayt_dragon_common2.lua")
 includeFile("groups/creature/krayt_tissue_common.lua")
 includeFile("groups/creature/krayt_tissue_rare.lua")
+includeFile("groups/creature/krayt_tissue_enhanced.lua")
 includeFile("groups/creature/krayt_tissue_uncommon.lua")
 includeFile("groups/creature/krayt_pearls.lua")
 includeFile("groups/creature/peko_albatross.lua")
@@ -378,6 +379,7 @@ includeFile("groups/wearables/wearables_uncommon.lua")
 
 -- custom items
 includeFile("groups/named_crystals.lua")
+includeFile("groups/schematic/tusken_clothing/tusken_clothing_schematics.lua")
 
 includeFile("groups/npc/meatlump_melee_components.lua")
 includeFile("groups/npc/meatlump_ranged_components.lua")
@@ -461,6 +463,7 @@ includeFile("groups/armor/rebel_assault.lua")
 -- New Weapons  Master Groups
 includeFile("groups/weapon/ranged/master_carbines.lua")
 includeFile("groups/weapon/ranged/master_rifles.lua")
+includeFile("groups/weapon/ranged/ranged_weapons.lua")
 includeFile("groups/weapon/ranged/master_pistols.lua")
 includeFile("groups/weapon/melee/master_2h_swords.lua")
 includeFile("groups/weapon/melee/master_polearms.lua")
@@ -514,3 +517,7 @@ includeFile("groups/furniture/xeno_desk.lua")
 
 -- NGE Weapon Schematics
 includeFile("groups/schematic/weapon/nge_ranged_weapon_schematics.lua")
+
+-- Lewt Boxes
+includeFile("groups/custom/common_lewt_box_01.lua")
+includeFile("groups/custom/dant_common.lua")
